@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>上海徽杰农业科技有限公司</title>
+  <link rel="shortcut icon" href="image/favicon.ico" />
+</head>
+<body>
+<div id="root" style="width: 100%;height: 100%;background:#f0f2f5;"></div>
+<script>
+//获得屏幕大小
+let htmlwidth = document.documentElement.clientWidth || document.body.clientWidth;  //浏览器兼容
+console.log("屏幕宽度："+htmlwidth) //iphone5:320 iphone6:375
+
+//获得html DOM元素
+let htmlDom = document.getElementsByTagName('html')[0];
+
+//给DOM元素设置样式
+htmlDom.style.fontSize = htmlwidth/20 + 'px';
+
+</script>
+</body>
+
+
+</html>

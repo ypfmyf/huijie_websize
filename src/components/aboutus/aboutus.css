@@ -1,0 +1,36 @@
+
+
+.cooperation{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    color:#fff;
+    font-size:16px;
+    text-align: center;
+
+}
+.code{
+    margin:10px 0px;
+    width:100%;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.codeImage{
+    width:100px;
+    height:100px;
+}
+.opinion{
+    margin-top:20px;
+    color:#ddd;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+    font-size:14px;
+}
+.opinion span{
+    height:20px;
+}
