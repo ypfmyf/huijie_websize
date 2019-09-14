@@ -1,36 +1,50 @@
-
-
-.cooperation{
-    width:100%;
-    height:40px;
-    line-height:40px;
-    color:#fff;
-    font-size:16px;
-    text-align: center;
-
+.aboutus{
+    margin-top: 2.67rem;
 }
-.code{
-    margin:10px 0px;
-    width:100%;
-    height: 100px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.aboutus_title{
+    font-size:1.01rem;
+    margin-top: 1.55rem;
+    margin-bottom: 1.55rem;
 }
-.codeImage{
-    width:100px;
-    height:100px;
+.aboutus_h3{
+    font-size: 0.7rem;
+    margin-bottom:1.55rem;
 }
-.opinion{
-    margin-top:20px;
-    color:#ddd;
-    width:100%;
+.aboutus_h4{
+    margin-bottom:0rem;
+    line-height:1.4rem;
+}
+.aboutus_img_ul{
     display: flex;
-    flex-direction:column;
-    justify-items: center;
-    align-items: center;
-    font-size:14px;
+    font-size:0.7rem;
+    color:#666;
+    justify-content : space-between;
+    margin-top:1.6rem;
 }
-.opinion span{
-    height:20px;
+.aboutus_img_li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutus_PC{
+    margin-top:99px;
+    display: flex;
+}
+.aboutus_title_PC{
+    font-size:18px;
+    margin-bottom:33px;
+}
+.aboutus_h3_PC{
+    font-size:16px;
+    margin-bottom:40px;
+}
+.aboutus_h4_PC{
+    font-size:16px;
+    line-height:35px;
+}
+.aboutus_img_ul_PC{
+    display: flex;
+    font-size:16px;
+    color:#666;
+    justify-content : space-between;
 }

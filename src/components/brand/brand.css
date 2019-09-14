@@ -1,0 +1,34 @@
+
+.brand_list{
+    margin-top: 2.67rem;
+    color:#333;
+}
+.brand_title{
+    font-size:1.01rem;
+    margin-top: 1.55rem;
+    text-align: center;
+}
+.brand_content{
+    font-size: 0.7rem;
+    margin-top: 1.013rem;
+    line-height:1.2rem;
+}
+.brand_PC{
+    display: flex;
+}
+.brand_list_PC{
+    flex:1;
+    margin-right:16px;
+    margin-top:99px;
+    color:#333;
+}
+.brand_title_PC{
+    font-size:36px;
+    margin-top:50px;
+    text-align: center;
+}
+.brand_content_PC{
+    font-size: 14px;
+    margin-top:30px;
+    line-height:30px;
+}

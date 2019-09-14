@@ -28,12 +28,21 @@ import { homedir } from 'os';
         return(
             <div >
                 <Header headerRight={this.state.headerRight}></Header>
-                <div className='content'>
-                       <div>
-                           <img src="../../../image/home/banner@2x.png" style={{width:'100%',height:'27.5625rem',}}></img>
-                       </div>
+                <div className={this.state.width>768? 'content content_PC':'content'}>
+                {this.state.width>768?
+                   <div>
+                        <img src="./image/home/pc_home.png" style={{width:'100%',height:'768px',}}></img>
+                   </div>
+                    :
+                    <div>
+                            <img src="./image/home/banner@2x.png" style={{width:'100%',height:'27.5625rem',}}></img>
+                            <Footer></Footer>
+                    </div>
+                     
+                }
+                       
 
-                       <Footer></Footer>
+                      
                 </div>
                 
 

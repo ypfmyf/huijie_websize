@@ -9,77 +9,61 @@ import './aboutus.css'
         super(props);
         this.state = {
             width:window.innerWidth || document.documentElement.clientWidth, // 得到当前的屏幕宽度
+            headerRight:'aboutus',
         }
        
     }
-
-    handleScroll() { 
-        if (document.documentElement.scrollTop >80) {
-           this.setState({
-            headerRight: true
-           })
-         }else{
-            this.setState({
-                headerRight:false
-               }) 
-         }
-       }
-       componentDidMount() {
-         window.onscroll = () => this.handleScroll();
-
-
-       }
-    
-
-  
-
     render() {
         return(
             <div>
                    <Header headerRight={this.state.headerRight}></Header>
-                  <div className="content">
-                        <div className="Content_Top">
-                            <img src="../../../image/doctor/001.png" className="Top_background"></img>
-                            <div className="background_title">
-                                <div className="title">
-                                  <span className="titFd">懂行业，更懂技术</span>
-                                  <span>在互联网技术领域中，对医药行业有自己独到的见解</span>
+                   <div className={this.state.width>768? 'content content_PC':'content'}>
+                       <div className={this.state.width>768? 'con_header con_header_PC':'con_header'}>
+                           <div>
+                                <div  className={this.state.width>768? 'header_H header_H_PC':'header_H'}>
+                                    <img src="./image/product/pic@2x.png"></img>
+                                    <span style={{fontSize:this.state.width>768? '20px':'1.12rem',color:'#333333',}}>联系我们</span>
+                                    <img src="./image/product/pic@2x.png"></img>
                                 </div>
+                                <div style={{fontSize:this.state.width>768? '14px':'0.8rem',color:'#999999',textAlign:'center',marginTop:this.state.width>768? '14px':'0.53rem'}}>Contact US</div>
+
                            </div>
-                        </div>
-                        <div className="Content_Text">
-                            <div className="knowGeji">
-                                <span>了解咯叽</span>
-                            </div>
-                            <div className="Geji_text">
-                                <span>
-                                上海咯叽科技网络有限公司于2014年9月成立，为了给医药企业中各个环节提供服务，也给医药事业提供了可持续发展的智能解决方案，咯叽科技始终不忘初心，让工作生活更便利。
-                                </span>
-                            </div>
-                            <div className="knowGeji knowGeji02">
-                                <span>商务合作</span>
-                            </div>
-                            <div className="cooperation">
-                                <span>商务合作</span>
-                            </div>
-                            <div className="code">
-                                    <img src="../../../image/doctor/code.png" className="codeImage"></img>
-                            </div>
-                            <div className="opinion">
-                                    <span>意见建议及咨询</span>
-                                    <span>support@gegee.cc</span>
-                            </div>
-                            <div className="opinion">
-                                    <span>客服热线</span>
-                                    <span>150-0045-8934</span>
-                            </div>
-                        </div>
+                       </div>
+                       <div style={{width:'80%',marginLeft:'10%',marginBottom:this.state.width>768? '99px':'2.1rem'}}>
+                          <div className={this.state.width>768? "aboutus_PC":"aboutus"}> 
+                              <img src="./image/about/imag-business@2x.png" style={{height:this.state.width>768? '364px':'11.73rem',width:this.state.width>768? '490px':'100%'}}></img>
+                              <div style={{marginLeft:this.state.width>768? '60px':''}}>
+                                    <div className={this.state.width>768? "aboutus_title_PC":"aboutus_title"}>江氏农业开发有限公司</div>
+                                    <div className={this.state.width>768? "aboutus_h3_PC":"aboutus_h3"}>服务热线：</div>
+                                    <div className={this.state.width>768? "aboutus_h4_PC":"aboutus_h3 aboutus_h4"}>公司地址：</div>
+                                    <div className={this.state.width>768? "aboutus_h4_PC":"aboutus_h3 aboutus_h4"}>公司邮箱：</div>
+                                    <div className={this.state.width>768? "aboutus_h4_PC":"aboutus_h3 aboutus_h4"}>邮政编码：</div>
+                                    <div className={this.state.width>768? "aboutus_img_ul_PC":"aboutus_img_ul"}>
+                                        <div className="aboutus_img_li" style={{marginRight:this.state.width>768? "30px":""}}>
+                                            <img src="./image/about/code-gzh@2x.png" style={{width:this.state.width>768? '140px':'7.63rem',height:this.state.width>768? '139px':'7.63rem'}}></img>
+                                            <div>公众号</div>
+                                        </div>
+                                        <div className="aboutus_img_li">
+                                            <img src="./image/about/code-wxsc@2x.png" style={{width:this.state.width>768? '140px':'7.63rem',height:this.state.width>768? '139px':'7.63rem'}}></img>
+                                            <div>微信商城</div>
+                                        </div>
+
+                                    </div>
 
 
-                        <Footer></Footer>
+                              </div>
+                          
+                          </div>
+                         
 
-                    </div>
-
+                       </div>
+                       {this.state.width>768?
+                             ""
+                             :
+                             <Footer></Footer>
+                            
+                         }
+                   </div>
                   
             </div>
           

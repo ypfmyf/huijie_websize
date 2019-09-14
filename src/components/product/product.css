@@ -21,3 +21,25 @@
 .pro_con_introduce div{
     margin-top:0.5rem;
 }
+.proList_PC{
+    display: flex;
+    margin-top:99px;
+    
+}
+.pro_con_con_PC{
+   font-size:36px;
+   margin:30px 0px 40px 0;
+   color:#1E1E1E;
+}
+.pro_con_Bor_PC{
+    height:5px;
+    border-top:1px solid #DDDDDD;
+    border-bottom:1px solid #DDDDDD; 
+}
+.pro_con_introduce_PC{
+    margin:30px 0;
+    font-size:16px;
+}
+.pro_con_introduce_PC div{
+    margin-top:10px;
+}

@@ -75,7 +75,7 @@ export default class Footer extends Component {
                 {this.state.WxShow?
                     <div className="wxPopout" >
                         <div className="wxBackground"  onClick={()=>this._wxPopout('bg')}></div>
-                        <img src="../../../image/doctor/code.png" className={this.state.showImg? "showImg":"hideImg"}></img>
+                        <img src="./image/doctor/code.png" className={this.state.showImg? "showImg":"hideImg"}></img>
                     </div>
                     :
                     null

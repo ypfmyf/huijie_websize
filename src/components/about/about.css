@@ -5,3 +5,13 @@
     color:#333333;
     margin-top: 3.23rem;
 }
+.about_PC{
+    display: flex;
+    margin-top:99px;
+    justify-content: space-between;
+    
+}
+.about_title_PC{
+    border-left:8px solid #198E3D;
+    font-size:18px;
+}
