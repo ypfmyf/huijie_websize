@@ -88,7 +88,7 @@ import './header.css'
                                                 <img src="./image/logo.png" alt="" className="imgWG"/>
                                             </div>
                                             <div onClick={()=>this._otherClick('Hide')}  className='header_Right'>
-                                                    <img src="/image/close.png" alt=""/> 
+                                                    <img src="./image/close.png" alt=""/> 
                                             </div>
                                         </div>
                                         <div >
